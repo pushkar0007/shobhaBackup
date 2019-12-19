@@ -62,13 +62,16 @@
                                         aria-expanded="false" class="dropdown-item dropdown-toggle">Dance</a>
                                     <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
                                         <li><a tabindex="-1" href="#" class="dropdown-item nav-link">level 2</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Bharathanatyam</a></li>
+                                        <li> <a [routerLink]="['services/dance/bharatanatyam/bharatanatyam']" [routerLinkActive]="'active'" class="nav-link">Bharathanatyam</a></li>
                                         <li><a href="#" class="dropdown-item nav-link">Kathak</a></li>
                                         <li><a href="#" class="dropdown-item nav-link">Folk</a></li>
                                         <li><a href="#" class="dropdown-item nav-link">Contemporary</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Bollywood</a></li>
+                                         
+                                        <!--<li><a href="#" class="dropdown-item nav-link">Bollywood</a></li>-->
+                                       <li> <a [routerLink]="['/services/dance/bollywood']" [routerLinkActive]="'active'" class="nav-link">Bollywood</a></li>
                                         <li><a href="#" class="dropdown-item nav-link">Western</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Hip-Hop</a></li>
+                                        <!--<li><a href="#" class="dropdown-item nav-link">Hip-Hop</a></li>-->
+                                        <li> <a [routerLink]="['/services/dance/hiphop']" [routerLinkActive]="'active'" class="nav-link">Hip-Hop</a></li>
                                         <li><a href="#" class="dropdown-item nav-link">Locking</a></li>
                                     </ul>
                                 </li>
@@ -81,8 +84,10 @@
                                         aria-expanded="false" class="dropdown-item dropdown-toggle">Fitness</a>
                                     <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
                                         <li><a tabindex="-1" href="#" class="dropdown-item nav-link">level 2</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Zumba</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Aerobics</a></li>
+                                        <!--<li><a href="#" class="dropdown-item nav-link">Zumba</a></li>-->
+                                        <li> <a [routerLink]="['services/fitness/zumba']" [routerLinkActive]="'active'" class="nav-link">Zumba</a></li>
+                                        <li> <a [routerLink]="['services/fitness/aerobics']" [routerLinkActive]="'active'" class="nav-link">Aerobics</a></li>
+                                        
                                         <li><a href="#" class="dropdown-item nav-link">Kalaripayattu</a></li>
                                         <li><a href="#" class="dropdown-item nav-link">Yoga</a></li>
                                         <li><a href="#" class="dropdown-item nav-link">Gymnastics</a></li>
