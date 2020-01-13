@@ -1,134 +1,126 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <div class="container">
-            <div class="logo"><a class="navbar-brand" href="index.html"><img src="assets/images/SDS_logo.png" alt=""></a>
-            </div>
-            <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
-                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-    
-            <div id="navbarContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                  
-                    <li class="nav-item"><a [routerLink]="['/home']" [routerLinkActive]="'active'"  class="nav-link">Home</a></li>
-                    <li class="nav-item"><a [routerLink]="['/video']" [routerLinkActive]="'active'" class="nav-link">Video</a></li>
-                    <li class="nav-item"><a [routerLink]="['/gallary']" [routerLinkActive]="'active'" class="nav-link">Gallery</a></li>
-                   
-                    <li class="nav-item dropdown">
-                            <a id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"class="nav-link dropdown-toggle">Services </a>
+    <div class="container">
         
-                            <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
-                                
-                                <li><a [routerLink]="['/services/dance-one']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Dance </a></li>
-                                <li><a href="#" class="dropdown-item nav-link">Some other action</a></li>
-        
-                                <li class="dropdown-divider"></li>
-        
-                                <!-- Level two dropdown-->
-                                <li class="dropdown-submenu">
-                                    <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" class="dropdown-item dropdown-toggle">Instrument</a>
-                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
-                                        <li><a tabindex="-1" href="#" class="dropdown-item nav-link">level 2</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Guitar</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Keyboard</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Tabla</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Mrudangam</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Flute</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Drums</a></li>
-                                    </ul>
-                                </li>
+        <div class="logo"><a class="navbar-brand" href="index.html"><img src="assets/images/SDS_logo.png" alt=""></a>
+        </div>
 
-                                <!--Pushkar changes started -->
-                                <li class="dropdown-divider"></li>
-        
-                                <!-- Level two dropdown-->
-                                <li class="dropdown-submenu">
-                                    <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" class="dropdown-item dropdown-toggle">Vocal</a>
-                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
-                                        <li><a tabindex="-1" href="#" class="dropdown-item nav-link">level 2</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Carnatic</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Hindustani</a></li>
-                                    </ul>
-                                </li>
+        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbars"
+        aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                                <li class="dropdown-divider"></li>
-        
-                                <!-- Level two dropdown-->
-                                <li class="dropdown-submenu">
-                                    <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" class="dropdown-item dropdown-toggle">Dance</a>
-                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
-                                        <li><a tabindex="-1" href="#" class="dropdown-item nav-link">level 2</a></li>
-                                        <li> <a [routerLink]="['services/dance/bharatanatyam/bharatanatyam']" [routerLinkActive]="'active'" class="nav-link">Bharathanatyam</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Kathak</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Folk</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Contemporary</a></li>
-                                         
-                                        <!--<li><a href="#" class="dropdown-item nav-link">Bollywood</a></li>-->
-                                       <li> <a [routerLink]="['/services/dance/bollywood']" [routerLinkActive]="'active'" class="nav-link">Bollywood</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Western</a></li>
-                                        <!--<li><a href="#" class="dropdown-item nav-link">Hip-Hop</a></li>-->
-                                        <li> <a [routerLink]="['/services/dance/hiphop']" [routerLinkActive]="'active'" class="nav-link">Hip-Hop</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Locking</a></li>
-                                    </ul>
-                                </li>
+        <div id="navbarContent" class="collapse navbar-collapse">
+       
+            <ul class="navbar-nav mr-auto">
 
-                                <li class="dropdown-divider"></li>
-        
-                                <!-- Level two dropdown-->
-                                <li class="dropdown-submenu">
-                                    <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" class="dropdown-item dropdown-toggle">Fitness</a>
-                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
-                                        <li><a tabindex="-1" href="#" class="dropdown-item nav-link">level 2</a></li>
-                                        <!--<li><a href="#" class="dropdown-item nav-link">Zumba</a></li>-->
-                                        <li> <a [routerLink]="['services/fitness/zumba']" [routerLinkActive]="'active'" class="nav-link">Zumba</a></li>
-                                        <li> <a [routerLink]="['services/fitness/aerobics']" [routerLinkActive]="'active'" class="nav-link">Aerobics</a></li>
-                                        
-                                        <li><a href="#" class="dropdown-item nav-link">Kalaripayattu</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Yoga</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Gymnastics</a></li>
-                                    </ul>
-                                </li>
+                <li class="nav-item"><a [routerLink]="['/home']" [routerLinkActive]="'active'" class="nav-link">Home</a></li>
+                <li class="nav-item"><a [routerLink]="['/video']" [routerLinkActive]="'active'" class="nav-link">Video</a></li>
+                <li class="nav-item"><a [routerLink]="['/gallary']" [routerLinkActive]="'active'" class="nav-link">Gallery</a></li>
 
-                                <li class="dropdown-divider"></li>
-        
-                                <!-- Level two dropdown-->
-                                <li class="dropdown-submenu">
-                                    <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" class="dropdown-item dropdown-toggle">Event</a>
-                                    <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
-                                        <li><a tabindex="-1" href="#" class="dropdown-item nav-link">level 2</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Dance Choreography</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Sangeeth Event</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Corporate Event</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Ceremonial Event</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Gala Night</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Public Event</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Corporate Meeting</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Product Launch</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Appreciation Event</a></li>
-                                        <li><a href="#" class="dropdown-item nav-link">Team Building Event</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                <!-- End Level two -->
+                <li class="nav-item dropdown">
+                    <a id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        class="nav-link dropdown-toggle">Services </a>
+
+                    <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+
+                        <li><a [routerLink]="['/services/dance-one']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Sample Guide Page </a></li>
+                        <li><a href="#" class="dropdown-item nav-link">Some other action</a></li>
+
+                        <li class="dropdown-divider"></li>
+
+                        <!-- Level two dropdown-->
+                        <li class="dropdown-submenu">
+                            <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" class="dropdown-item dropdown-toggle">Instrument</a>
+                            <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a [routerLink]="['/services/instrument/guitar']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Guitar</a></li>
+                                <li><a [routerLink]="['/services/instrument/keyboard']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Keyboard</a></li>
+                                <li><a [routerLink]="['/services/instrument/tabla']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Tabla</a></li>
+                                <li><a [routerLink]="['/services/instrument/mrudangam']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Mrudangam</a></li>
+                                <li><a [routerLink]="['/services/instrument/flute']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Flute</a></li>
+                                <li><a [routerLink]="['/services/instrument/drums']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Drums</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a [routerLink]="['/contact-us']" [routerLinkActive]="'active'" class="nav-link">Contact us</a></li>
-                </ul>
-            </div>
+
+                        <!--Pushkar changes started -->
+                        <li class="dropdown-divider"></li>
+
+                        <!-- Level two dropdown-->
+                        <li class="dropdown-submenu">
+                            <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" class="dropdown-item dropdown-toggle">Vocal</a>
+                            <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a [routerLink]="['/services/vocal/carnatic']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Carnatic</a></li>
+                                <li><a [routerLink]="['/services/vocal/hindustani']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Hindustani</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-divider"></li>
+
+                        <li class="dropdown-submenu">
+                            <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" class="dropdown-item dropdown-toggle">Dance</a>
+                            <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a [routerLink]="['/services/dance/bharatanatyam/bharatanatyam']" [routerLinkActive]="'active'" class="nav-link">Bharathanatyam</a></li>
+                                <li><a [routerLink]="['/services/dance/kathak']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Kathak</a></li>
+                                <li><a [routerLink]="['/services/dance/folk']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Folk</a></li>
+                                <li><a [routerLink]="['/services/dance/contemporary']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Contemporary</a></li>
+                                <li><a [routerLink]="['/services/dance/bollywood']" [routerLinkActive]="'active'" class="nav-link">Bollywood</a></li>
+                                <!--<li><a [routerLink]="['/services/dance/western']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Western</a></li>-->
+                                <li><a [routerLink]="['/services/dance/hiphop']" [routerLinkActive]="'active'" class="nav-link">Hip-Hop</a></li>
+                                <!--<li><a [routerLink]="['/services/dance/locking']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Locking</a></li>-->
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-divider"></li>
+
+                        <li class="dropdown-submenu">
+                            <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" class="dropdown-item dropdown-toggle">Fitness</a>
+                            <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a [routerLink]="['/services/fitness/zumba']" [routerLinkActive]="'active'" class="nav-link">Zumba</a></li>
+                                <li><a [routerLink]="['/services/fitness/aerobics']" [routerLinkActive]="'active'" class="nav-link">Aerobics</a></li>
+                                <li><a [routerLink]="['/services/fitness/kalaripayattu']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Kalaripayattu</a></li>
+                                <li><a [routerLink]="['/services/fitness/yoga']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Yoga</a></li>
+                                <li><a [routerLink]="['/services/fitness/gymnastics']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Gymnastics</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-divider"></li>
+
+                        <!-- Level two dropdown-->
+                        <li class="dropdown-submenu">
+                            <a id="dropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" class="dropdown-item dropdown-toggle">Event</a>
+                            <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a [routerLink]="['/services/event/dance-choreography']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Dance Choreography</a></li>
+                                <li><a [routerLink]="['/services/event/sangeeth']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Sangeeth Event</a></li>
+                                <li><a [routerLink]="['/services/event/corporate']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Corporate Event</a></li>
+                                <li><a [routerLink]="['/services/event/ceremonial']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Ceremonial Event</a></li>
+                                <li><a [routerLink]="['/services/event/gala']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Gala Night</a></li>
+                                <li><a [routerLink]="['/services/event/public']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Public Event</a></li>
+                                <li><a [routerLink]="['/services/event/corporate-meeting']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Corporate Meeting</a></li>
+                                <li><a [routerLink]="['/services/event/product-launch']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Product Launch</a></li>
+                                <li><a [routerLink]="['/services/event/appreciation-event']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Appreciation Event</a></li>
+                                <li><a [routerLink]="['/services/event/team-building']" [routerLinkActive]="'active'" class="dropdown-item nav-link">Team Building Event</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- End Level two -->
+                    </ul>
+                </li>
+                <li class="nav-item"><a [routerLink]="['/contact-us']" [routerLinkActive]="'active'"
+                        class="nav-link">Contact us</a></li>
+            </ul>
         </div>
-    </nav>
-    
-    
-    
-    
-    
-    <!-- <mdb-navbar SideClass="navbar navbar-expand-lg white">
+    </div>
+</nav>
+
+
+
+
+
+<!-- <mdb-navbar SideClass="navbar navbar-expand-lg white">
         <mdb-navbar-brand>
             <div class="logo"><a class="navbar-brand" href="index.html"><img src="assets/images/SDS_logo.png" alt=""></a>
             </div>

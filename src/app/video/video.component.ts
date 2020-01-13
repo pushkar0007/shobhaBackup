@@ -33,12 +33,10 @@ export class VideoComponent implements OnInit {
 
   ngOnInit(){
       $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-          event.preventDefault();
+          event.preventDefault();          
+          event.stopPropagation();
           $(this).ekkoLightbox();
       });
-
-
-
   }
 
 }
