@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var $: any;
+declare var jQuery: any;
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
@@ -64,16 +65,22 @@ export class CarouselComponent implements OnInit {
       img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
     },
   ];
-  slides: any = [[]];
-  chunk(arr, chunkSize) {
-    let R = [];
-    for (let i = 0, len = arr.length; i < len; i += chunkSize) {
-      R.push(arr.slice(i, i + chunkSize));
-    }
-    return R;
-  }
+  // slides: any = [[]];
+  // chunk(arr, chunkSize) {
+  //   let R = [];
+  //   for (let i = 0, len = arr.length; i < len; i += chunkSize) {
+  //     R.push(arr.slice(i, i + chunkSize));
+  //   }
+  //   return R;
+  // }
   ngOnInit() {
-    this.slides = this.chunk(this.cards, 3);
+  // this.slides = this.chunk(this.cards, 3);
+    $(function(){
+      $('#carousel').carousel({
+        interval: 1000,
+        pause : true
+      });
+  });
   }
 
 }

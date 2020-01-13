@@ -20,14 +20,17 @@ import { VocalComponent } from './services/vocal/vocal.component';
 import { DanceComponent } from './services/dance/dance.component';
 import { FitnessComponent } from './services/fitness/fitness.component';
 import { EventComponent } from './services/event/event.component';
+
 import { GuitarComponent } from './services/instrument/guitar/guitar.component';
 import { KeyboardComponent } from './services/instrument/keyboard/keyboard.component';
 import { TablaComponent } from './services/instrument/tabla/tabla.component';
 import { MrudangamComponent } from './services/instrument/mrudangam/mrudangam.component';
 import { FluteComponent } from './services/instrument/flute/flute.component';
 import { DrumsComponent } from './services/instrument/drums/drums.component';
+
 import { CarnaticComponent } from './services/vocal/carnatic/carnatic.component';
 import { HindustaniComponent } from './services/vocal/hindustani/hindustani.component';
+
 import { BharatanatyamComponent } from './services/dance/bharatanatyam/bharatanatyam.component';
 import { KathakComponent } from './services/dance/kathak/kathak.component';
 import { FolkComponent } from './services/dance/folk/folk.component';
@@ -36,11 +39,13 @@ import { BollywoodComponent } from './services/dance/bollywood/bollywood.compone
 import { WesternComponent } from './services/dance/western/western.component';
 import { HiphopComponent } from './services/dance/hiphop/hiphop.component';
 import { LockingComponent } from './services/dance/locking/locking.component';
+
 import { ZumbaComponent } from './services/fitness/zumba/zumba.component';
 import { AerobicsComponent } from './services/fitness/aerobics/aerobics.component';
 import { KalaripayattuComponent } from './services/fitness/kalaripayattu/kalaripayattu.component';
 import { YogaComponent } from './services/fitness/yoga/yoga.component';
 import { GymnasticsComponent } from './services/fitness/gymnastics/gymnastics.component';
+
 import { DanceChoreographyComponent } from './services/event/dance-choreography/dance-choreography.component';
 import { SangeethComponent } from './services/event/sangeeth/sangeeth.component';
 import { CorporateComponent } from './services/event/corporate/corporate.component';
