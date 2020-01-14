@@ -56,6 +56,7 @@ import { CorporateMeetingComponent } from './services/event/corporate-meeting/co
 import { ProductLaunchComponent } from './services/event/product-launch/product-launch.component';
 import { AppreciationEventComponent } from './services/event/appreciation-event/appreciation-event.component';
 import { TeamBuildingComponent } from './services/event/team-building/team-building.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 @NgModule({
@@ -105,7 +106,8 @@ import { TeamBuildingComponent } from './services/event/team-building/team-build
     CorporateMeetingComponent,
     ProductLaunchComponent,
     AppreciationEventComponent,
-    TeamBuildingComponent
+    TeamBuildingComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
